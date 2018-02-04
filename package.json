@@ -2,6 +2,9 @@
   "name": "jarrod-mern-app",
   "version": "0.0.1",
   "description": "A sample Node.js app using MERN stack",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
