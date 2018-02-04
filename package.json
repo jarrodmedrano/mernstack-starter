@@ -2,15 +2,13 @@
   "name": "jarrod-mern-app",
   "version": "0.0.1",
   "description": "A sample Node.js app using MERN stack",
-  "engines": {
-    "node": "8.9.1"
-  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
     "concurrently": "^3.5.1",
